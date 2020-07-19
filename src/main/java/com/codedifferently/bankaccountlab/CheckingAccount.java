@@ -5,14 +5,16 @@ public class CheckingAccount extends BankAccount {
    private Double deposit;
    private Double withdraw;
 
-    CheckingAccount()
+    public CheckingAccount()
     {
         super();
-        this.checkingAccFees = 0.0; 
+
+        this.checkingAccFees = 0.01; 
     }
-    CheckingAccount(Integer accountNum,String name, Integer pin)
+     public CheckingAccount(Integer accountNum,String name, Integer pin)
     {
         super(accountNum, name, pin);
+
         this.checkingAccFees = 0.03;
     }
     public Double getFees()
@@ -29,7 +31,7 @@ public class CheckingAccount extends BankAccount {
     }
     public void withdraw(Double with)
     {
-        this.setBalance(this.getBalance() - withdraw);
+        this.setBalance(this.getBalance() - with);
     }
     public Double getdeposit()
     {

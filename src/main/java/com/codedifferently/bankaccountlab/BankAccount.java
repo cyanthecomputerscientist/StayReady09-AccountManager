@@ -12,7 +12,7 @@ public abstract class BankAccount {
     {
         this.accountNumber = 1;
         this.fees = 0.00;
-        this.name = "";
+        this.name = "Name";
         this.pin = 0000;
         this.balance = 0.00;
         
